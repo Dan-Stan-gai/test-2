@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+  color: darkslategray;
+  text-align: center;
+  margin: 20px;
+  
+}
+
+/* xxxxxxxxxxxxxxxxxx TITULINIS xxxxxxxxxxxxxxxxxxxxxxxxxx */
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper>* {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.footer {
+  background: rgb(165, 172, 172);
+}
+
+/* .main {
+      text-align: left;
+    } */
+
+/* .aside-1 {
+      background: none;
+    }
+    
+    .aside-2 {
+      background: none;
+    } */
+
+/* / */
+
+    .aside-1 {
+      order: 1;
+    }
+
+    .main {
+      order: 2;
+    }
+
+    .aside-2 {
+      order: 3;
+    }
+
+    .footer {
+      order: 4;
+    }
+
+    /* body {
+  padding: 2em;
+} */
+
+  /* xxxxxxxxxxxxx NAVIGACIJA oxxxxxxxxxxxxxxxxxx */
+  .navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+
+    list-style: none;
+    margin: 0;
+  }
+  /* .nav1 {
+    justify-content: left;
+
+  }
+  .nav2 {
+    justify-content: flex-end;
+  } */
+
+  .navigation a {
+    text-decoration: none;
+    display: inline;
+    padding: 1em;
+  }
+
+  @media all and (max-width: 800px) {
+    .navigation {
+      justify-content: space-around;
+    }
+  }
+
+  @media all and (max-width: 600px) {
+    .navigation {
+      flex-flow: column wrap;
+      padding: 0;
+    }
+
+    .navigation li:last-of-type a {
+      border-bottom: none;
+    }
+  }
+
+  /* xxxxxxxxxxxxxxx FOTO PAPARTIS container1 xxxxxxxxxxxxxxxxxxxxx */
+  .hero-image {
+    background-image: url(img/christian-ladewig-eZbT-8O14yU-unsplash.jpg);
+    height: 500px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* .img {
+    width: 100px;
+    height: 50%;
+  } */
+  /* xxxxxxxxxxxxxxx FOTO GRUPE container2 xxxxxxxxxxxxxxxxxxxxx */
+  /* header {
+  text-align: center;
+  padding: 10px;
+} */
+  .box31 {
+    display: flex;
+
+  }
+
+  .img-1 {
+    background-image: url(img/andre-mouton-KRJ5EurQnRA-unsplash.jpg);
+    height: 200px;
+    flex-grow: 1;
+    background-size: cover;
+
+  }
+
+  .img-2 {
+    background-image: url(img/nandhu-kumar-F2q8hI3r7ns-unsplash.jpg);
+    height: 200px;
+    flex-grow: 2;
+    background-size: cover;
+
+  }
+
+  .img-1 {
+    background-image: url(img/wu-yi-hhL02NZaAeA-unsplash.jpg);
+    height: 200px;
+    flex-grow: 1;
+    background-size: cover;
+
+  }
+
+  .img-2 {
+
+    background-image: url(img/nandhu-kumar-F2q8hI3r7ns-unsplash.jpg);
+    height: 200px;
+    flex-grow: 2;
+    background-size: cover;
+
+  }
+
+  /* xxxxxxxxxxxxxxxxxxxx VIDURINIS TEKSTAS container3 xxxxxxxxxxxxxxxxxxxxxxxxx */
+
+  .container3 {
+    background-color: rgb(230, 227, 227);
+    display: flex;
+    flex-grow: 1;
+    text-align: center;
+
+  }
+
+  /* .item {
+    display: flex;
+    flex-grow: 1;
+    text-align: center;
+
+  } */
+
+  .box5 {
+    background-color: rgb(230, 227, 227);
+  }
+
+  /* xxxxxxxxxx LINIJA xxxxxxxxxxxxx */
+hr {
+    color: darkslategray;
+    width: 50px;
+    height: 5px;
+  }
+
+  /* xxxxxxxxxx FORMOS xxxxxxxxxxxxx */
